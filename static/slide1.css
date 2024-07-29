@@ -1,0 +1,50 @@
+.custom-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Высота слайдера на весь экран */
+    overflow: hidden;
+  }
+  
+  .custom-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Изображение покрывает блок, сохраняя пропорции */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Избежание повторения изображения */
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .custom-slide.active {
+    opacity: 1;
+  }
+  
+  .custom-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      z-index: 1;
+  }
+  
+  .custom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 2; /* Помещает текст поверх фонового цвета */
+    padding: 0 20px; /* Отступы по бокам, чтобы текст не прилипал к краям */
+  }
+  .custom-title-wrapper {
+    background: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый фон для текста */
+    padding: 10px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Скругление углов для фона текста */
+    backdrop-filter: blur(10px); /* Эффект размытия фона за элементом */
+    -webkit-backdrop-filter: blur(10px); /* Поддержка для Safari */
+  }

@@ -24,12 +24,14 @@
 
     <link rel="stylesheet" href="{% static 'style.min.css' %}">
     <link rel="stylesheet" href="{% static 'slide.css' %}">
+    <link rel="stylesheet" href="{% static 'slide1.css' %}">
     <link rel="stylesheet" href="{% static 'lic.css' %}">
 
 
     
 
     <script src="{% static 'slide.js' %}"></script>
+    <script src="{% static 'slide1.js' %}"></script>
     <script src="{% static 'lic.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
@@ -82,11 +84,30 @@
             <div class="triangle-up-right"></div>
         </div>
     </nav>
-		<div class="jumbotron d-flex align-items-center" style="background-image: url({% static 'slide1.jpg' %})">
-  <div class="container text-center">
-    <h1 class="display-2 mb-4">{% trans "Стройте свои " %}<a href="#">{% trans "мечты" %}</a>{% trans "  вместе с нами!" %}</h1>
-  </div>
-</div>		<section id="who-we-are" class="bg-white">
+    <div id="custom-slider" class="custom-slider">
+        <div class="custom-slide" style="background-image: url('{% static 'slide1/slide3.png' %}')">
+            <div class="custom-container text-center">
+              <div class="custom-title-wrapper">
+                <h1 class="custom-title mb-4" ><b>{% trans "Стройте свои " %}<a href="#">{% trans "мечты" %}</a>{% trans "  вместе с нами!" %}</b></h1>
+              </div>
+            </div>
+          </div>
+          <div class="custom-slide" style="background-image: url('{% static 'slide1/slide1.png' %}')">
+            <div class="custom-container text-center">
+              <!-- Возможно, добавьте текст или другие элементы здесь -->
+            </div>
+          </div>
+          <div class="custom-slide" style="background-image: url('{% static 'slide1/slide2.png' %}')">
+            <div class="custom-container text-center">
+              <!-- Возможно, добавьте текст или другие элементы здесь -->
+            </div>
+          </div>
+        <!-- Добавьте больше слайдов по необходимости -->
+      </div>
+      
+              
+
+<section id="who-we-are" class="bg-white">
     <div class="container">
         <div class="triangle-up-left"></div>
         <div class="triangle-up-right"></div>
@@ -202,6 +223,9 @@
                                     </div>
                                     <div class="slider-item">
                                         <img src="{% static 'lic/lisence5.jpg' %}" alt="Photo 5">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/lisence1.jpg' %}" alt="Photo 1">
                                     </div>
                                     <div class="slider-item">
                                         <img src="{% static 'lic/sertificate.jpg' %}" alt="Photo 6">
