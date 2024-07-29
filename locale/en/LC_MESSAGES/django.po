@@ -144,8 +144,8 @@ msgstr "English"
 msgid "Наши адреса"
 msgstr "Our addresses"
 
-msgid "Туркменистан, Г.Ашхабад, Парахат 2/4, б.3"
-msgstr "Turkmenistan, Ashgabat, Parahat 2/4, b.3"
+msgid "Туркменистан, Г.Ашхабад, Улица Огуз-хана дом 3"
+msgstr "Turkmenistan, Ashgabat, Oguz Khan Street, building 3"
 
 msgid "Электронная почта:"
 msgstr "Email:"
