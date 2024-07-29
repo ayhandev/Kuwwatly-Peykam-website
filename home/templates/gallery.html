@@ -1,0 +1,427 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Кувватлы Пейкам | Компания Кувватлы Пейкам</title>
+    <meta name="description" content="Ayhandev :)">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lightcase.css' %}">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Josefin+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'slide.css' %}">
+    <link rel="stylesheet" href="{% static 'lic.css' %}">
+
+
+    
+
+    <script src="{% static 'slide.js' %}"></script>
+    <script src="{% static 'lic.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <style>
+
+.gallery-title {
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-grid img {
+    width: 23%;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+    <nav id="header-navbar" class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.8); position: fixed; margin: 0 auto; top: 0; width: 100%; z-index: 1000; color: black; backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+               <img src="{% static 'kuwwatly-peykam-logo.png' %}" alt="" width="100px">
+            </a>
+            <button class="navbar-toggler" type="button" style="color: black;" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav-header">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="/"><b>{% trans "Главная" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'about' %}"><b>{% trans "О нас" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'portfolio' %}"><b>{% trans "Портфолио" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #2487C7;" href="{% url 'gallery' %}"><b>{% trans "Галерея" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'contact' %}"><b>{% trans "Контакты" %}</b></a>
+                    </li>
+                    <!-- Добавляем выпадающий список для переключения языка -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            {# Текст для выпадающего списка #}
+                            <b>{% trans "Языки" %}</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <form action="{% url 'set_language' %}" method="post" class="px-4 py-2">
+                                {% csrf_token %}
+                                <input name="next" type="hidden" value="{{ request.path }}">
+                                <button type="submit" name="language" value="en" class="dropdown-item"><p>{% trans "Английский" %}</p></button>
+                                <button type="submit" name="language" value="ru" class="dropdown-item"><p>{% trans "Русский" %}</p></button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="triangle-up-left"></div>
+            <div class="triangle-up-right"></div>
+        </div>
+    </nav>		
+<section id="who-we-are" class="bg-white mt-1 pt-5" >
+     <section class="mt-5 pt-5">
+        <div class="gallery-container">
+            {% for gal in galleries %}
+            <h2 align="center" class="mt-5 gallery-title">{% trans gal.title %}</h2>
+            <div id="gallery-grid-{{ gal.id }}" class="gallery-grid">
+                {% for foto in gal.photos.all %}
+                <div class="gallery-item">
+                    <img src="{{ foto.image.url }}" alt="Фото" onclick="openLightbox(this)">
+                </div>
+                {% empty %}
+                <p>{% trans "Фотографий нет" %}</p>
+                {% endfor %}
+            </div>
+            <div class="pagination" data-gallery-id="{{ gal.id }}">
+                <button onclick="prevPage({{ gal.id }})" class="btn1 prev"><b><</b></button>
+                <span id="page-num-{{ gal.id }}">1</span>
+                <button onclick="nextPage({{ gal.id }})" class="btn1 next"><b>></b></button>
+            </div>
+            {% empty %}
+            <p>{% trans "Галерей нет" %}</p>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    
+    
+    <style>
+        .btn1 {
+            background-color: #2487C7;
+            color: white;
+            border: none;
+            border-radius: 14px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn1:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .gallery-title {
+            font-size: 2em; /* Начальный размер текста */
+            transition: font-size 0.3s ease; /* Плавное изменение размера текста */
+        }
+        
+        @media (max-width: 1200px) {
+            .gallery-title {
+                font-size: 1.8em; /* Размер текста для экранов до 1200px */
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .gallery-title {
+                font-size: 1.6em; /* Размер текста для экранов до 992px */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-title {
+                font-size: 1.4em; /* Размер текста для экранов до 768px */
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .gallery-title {
+                font-size: 1.2em; /* Размер текста для экранов до 576px */
+            }
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+            gap: 10px; /* Расстояние между изображениями */
+            width: 80%; /* Ширина контейнера */
+            margin: auto;
+            transition: all 0.5s ease; /* Плавная анимация для изменения */
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 200px; /* Задаем фиксированную высоту */
+            transition: all 0.5s ease; /* Плавная анимация для изменения */
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%; /* Заполняет высоту контейнера */
+            object-fit: cover; /* Сохраняет пропорции, обрезая изображение по необходимости */
+            transition: transform 0.3s ease; /* Плавная анимация для увеличения */
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Увеличение при наведении */
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-item {
+                height: 150px; /* Уменьшаем высоту для планшетов */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-item {
+                height: 100px; /* Уменьшаем высоту для телефонов */
+            }
+        }
+        
+        /* Lightbox styles */
+        .lightbox {
+            display: none; /* Изначально скрыт */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9); /* Черный с непрозрачностью */
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease; /* Плавная анимация для изменения */
+        }
+        
+        .lightbox-content {
+            width: 80%;
+            max-width: 700px;
+            transition: all 0.5s ease; /* Плавная анимация для увеличения */
+        }
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        
+
+    </style>
+    
+
+
+</section>	
+<footer class="mastfoot bg-white  border-top ">
+
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <p >
+                        <a href="tel:+99312432060"><img src="{% static 'tel.png' %}" width="20px" alt=""> +99312432060</a>
+                        
+                        <a href="tel:+99312433727">FAX +99312433727</a> 
+                        <a href="mailto:admin@kuwwatly-peykam.com" class="email"><img src="{% static 'pocta.png' %}" alt="" width="20px"> admin@kuwwatly-peykam.com</a>
+                    </p>
+                </div>
+            </div>
+</footer>	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="{% static 'popper.min.js' %}"></script>
+	<script src="{% static 'bootstrap.min.js' %}"></script>
+	<script src="{% static 'select2.min.js' %} "></script>
+	<script src="{% static 'owl.carousel.min.js' %}"></script>
+	<script src="{% static 'isotope.min.js' %}"></script>
+	<script src="{% static "lightcase.js" %} %}"></script>
+	<script src="{% static 'waypoint.min.js' %}"></script>
+	<script src="{% static 'jquery.countTo.js' %}"></script>
+	<script src="{% static 'jquery.validate.min.js' %}"></script>
+
+	<!-- Main JS -->
+	<script src="{% static 'jquery.validate.min.js' %}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleries = document.querySelectorAll('.gallery-grid');
+    
+            galleries.forEach(gallery => {
+                const galleryId = gallery.id.split('-')[2];
+                const items = gallery.querySelectorAll('.gallery-item');
+                const pagination = document.querySelector(`.pagination[data-gallery-id="${galleryId}"]`);
+                const pageNum = pagination.querySelector(`#page-num-${galleryId}`);
+                const prevBtn = pagination.querySelector('.prev');
+                const nextBtn = pagination.querySelector('.next');
+                let currentPage = 1;
+                const itemsPerPage = 8;
+    
+                function showPage(page) {
+                    const start = (page - 1) * itemsPerPage;
+                    const end = start + itemsPerPage;
+                    items.forEach((item, index) => {
+                        if (index >= start && index < end) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    pageNum.textContent = page;
+                    prevBtn.disabled = page === 1;
+                    nextBtn.disabled = page * itemsPerPage >= items.length;
+                }
+    
+                prevBtn.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        showPage(currentPage);
+                    }
+                });
+    
+                nextBtn.addEventListener('click', () => {
+                    if (currentPage * itemsPerPage < items.length) {
+                        currentPage++;
+                        showPage(currentPage);
+                    }
+                });
+    
+                showPage(currentPage);
+            });
+        });
+    
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        }
+    
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+
+    
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-65003908-1');
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% trans "Кувватлы Пейкам | Компания Кувватлы Пейкам" %}</title>
+    <meta name="description" content="Ayhandev :)">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lightcase.css' %}">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Josefin+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'slide.css' %}">
+    <link rel="stylesheet" href="{% static 'lic.css' %}">
+
+
+    
+
+    <script src="{% static 'slide.js' %}"></script>
+    <script src="{% static 'lic.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+    <nav id="header-navbar" class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.8); position: fixed; margin: 0 auto; top: 0; width: 100%; z-index: 1000; color: black; backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+               <img src="{% static 'kuwwatly-peykam-logo.png' %}" alt="" width="100px">
+            </a>
+            <button class="navbar-toggler" type="button" style="color: black;" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav-header">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="/"><b>{% trans "Главная" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #2487C7;" href="{% url 'about' %}"><b>{% trans "О нас" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'portfolio' %}"><b>{% trans "Портфолио" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'gallery' %}"><b>{% trans "Галерея" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'contact' %}"><b>{% trans "Контакты" %}</b></a>
+                    </li>
+                    <!-- Добавляем выпадающий список для переключения языка -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            {# Текст для выпадающего списка #}
+                            <b>{% trans "Языки" %}</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <form action="{% url 'set_language' %}" method="post" class="px-4 py-2">
+                                {% csrf_token %}
+                                <input name="next" type="hidden" value="{{ request.path }}">
+                                <button type="submit" name="language" value="en" class="dropdown-item"><p>{% trans "Английский" %}</p></button>
+                                <button type="submit" name="language" value="ru" class="dropdown-item"><p>{% trans "Русский" %}</p></button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="triangle-up-left"></div>
+            <div class="triangle-up-right"></div>
+        </div>
+    </nav>
+<div class="jumbotron  align-items-center mt-5" >
+  <div class="container text-center mt-5">
+    <div class=" display-2 mt-5" style="text-align: start;">
+        <h5>{% trans "Кувватлы Пейкам, в настоящее время, намерена достичь высоких рубежей путем широкого применения достигнутого опыта и внести весомый вклад в проводимые Уважаемым Президентом Сердар Бердымухамедовым, в нашей стране, технологические инновационные реформы и решения." %}</h5>
+        <h5>{% trans "Наша компания разрабатывает новые проекты, такие как, открытие сборочной линии для инновационного умного топливного диспенсера, обеспечивающего такие показатели как безопасность, экономия и экология, так же, проект по открытию сборочной линии для мPOS терминалов нового поколения для оплаты картами, контактными, бесконтактными, QR кодом." %}</h5>
+        <h5>{% trans "Так же проект по очистке нефтетопливных резервуаров и последующей переработке донных отложений, без внедрения человеческих рабочих сил с помощью механизированных автоматических систем." %}</h5>
+        <h5>{% trans "В настоящее время ХО «Кувватлы Пейкам», осваивает мировые ведущие технологии и осуществил набор высококвалифицированных инженеров и специалистов в свой кадровый состав. Наши специалисты имеют ответственный подход к проводимым работам, используя не малый опыт в различных направлениях технологической, строительной сферах." %}</h5>
+        <h5>{% trans "Хозяйственное общество «Кувватлы Пейкам», имеет опыт в строительной сфере в качестве субподрядчика на проектах, осуществляемых на территории Туркменистана с известными компаниями как “ GAP INŞAAT SANAYI WE TIJARET A.Ş.” Company , “HYUNDAI ENGINEERING CO. LTD.” Company, “RÖNESANS ENDÜSTRI TESISLERI INŞAAT SANAYI VE TICARET ANONIM ŞIRKETI” Company а также “Bouygues International Batiment” Company, от которых имеем рекомендательные и благодарственные письма." %}</h5>
+        <h5>{% trans "В данное время ХО «Кувватлы Пейкам» достраивает двух пролётный 18-ти метровый мост к проезду строящейся инфекционной больницы рассчитанной на 200 мест, которая находится в Ахалском велаяте поселок Изгант, а так же начато строительство 2-х мостов по ул.Г.Кулиева дороги «Ашгабат-Геоктепе»." %}</h5>
+        <h5>{% trans "Мы так же принимали участие и закончили различные виды работ при постройке нового отеля «Диван» в центре Ашгабата и участие в строительстве нового бизнес центра и отеля «Гарагум», в Ашгабате, выполняя высотные работы, используя промышленных альпинистов и монтажников." %}</h5>
+
+    </div>
+  </div>
+</div>		
+<footer class="mastfoot bg-white  border-top">
+
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <p class="mb-0">
+                        <a href="tel:+99312432060"><img src="{% static 'tel.png' %}" width="20px" alt=""> +99312432060</a>
+                        
+                        <a href="tel:+99312433727">FAX +99312433727</a> 
+                        <a href="mailto:admin@kuwwatly-peykam.com" class="email"><img src="{% static 'pocta.png' %}" alt="" width="20px"> admin@kuwwatly-peykam.com</a>
+                    </p>
+                </div>
+            </div>
+           
+            
+
+
+</footer>	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="{% static 'popper.min.js' %}"></script>
+	<script src="{% static 'bootstrap.min.js' %}"></script>
+	<script src="{% static 'select2.min.js' %} "></script>
+	<script src="{% static 'owl.carousel.min.js' %}"></script>
+	<script src="{% static 'isotope.min.js' %}"></script>
+	<script src="{% static "lightcase.js" %} %}"></script>
+	<script src="{% static 'waypoint.min.js' %}"></script>
+	<script src="{% static 'jquery.countTo.js' %}"></script>
+	<script src="{% static 'jquery.validate.min.js' %}"></script>
+
+	<!-- Main JS -->
+	<script src="{% static 'jquery.validate.min.js' %}"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65003908-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-65003908-1');
+</script>
+</body>
+</html>

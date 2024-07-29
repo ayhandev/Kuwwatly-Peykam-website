@@ -1,0 +1,328 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% trans "Кувватлы Пейкам | Компания Кувватлы Пейкам" %}</title>
+    <meta name="description" content="Ayhandev :)">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lightcase.css' %}">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Josefin+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'slide.css' %}">
+    <link rel="stylesheet" href="{% static 'lic.css' %}">
+
+
+    
+
+    <script src="{% static 'slide.js' %}"></script>
+    <script src="{% static 'lic.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+
+    <nav id="header-navbar" class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.8); position: fixed; margin: 0 auto; top: 0; width: 100%; z-index: 1000; color: black; backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+               <img src="{% static 'kuwwatly-peykam-logo.png' %}" alt="" width="100px">
+            </a>
+            <button class="navbar-toggler" type="button" style="color: black;" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav-header">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #2487C7;" href="/"><b>{% trans "Главная" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'about' %}"><b>{% trans "О нас" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'portfolio' %}"><b>{% trans "Портфолио" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'gallery' %}"><b>{% trans "Галерея" %}</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="{% url 'contact' %}"><b>{% trans "Контакты" %}</b></a>
+                    </li>
+                    <!-- Добавляем выпадающий список для переключения языка -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            {# Текст для выпадающего списка #}
+                            <b>{% trans "Языки" %}</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <form action="{% url 'set_language' %}" method="post" class="px-4 py-2">
+                                {% csrf_token %}
+                                <input name="next" type="hidden" value="{{ request.path }}">
+                                <button type="submit" name="language" value="en" class="dropdown-item"><p>{% trans "Английский" %}</p></button>
+                                <button type="submit" name="language" value="ru" class="dropdown-item"><p>{% trans "Русский" %}</p></button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="triangle-up-left"></div>
+            <div class="triangle-up-right"></div>
+        </div>
+    </nav>
+		<div class="jumbotron d-flex align-items-center" style="background-image: url({% static 'slide1.jpg' %})">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">{% trans "Стройте свои " %}<a href="#">{% trans "мечты" %}</a>{% trans "  вместе с нами!" %}</h1>
+  </div>
+</div>		<section id="who-we-are" class="bg-white">
+    <div class="container">
+        <div class="triangle-up-left"></div>
+        <div class="triangle-up-right"></div>
+        <div class="square-left"></div>
+        <div class="square-right"></div>
+        <div class="section-content">
+            <div class="title-wrap">
+                <h2 class="section-title">{% trans "Чем мы " %}<b><span style="color: #2487C7;">{% trans "лучше?" %}</span></b></h2>
+                <p class="section-sub-title" style="text-decoration: underline;"><b>{% trans "Строго соблюдаем все сроки выполнения работ" %}</b></p>
+
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-6 ">
+                    <img class="rounded-circle" src="{% static 'tehlonog.png' %}" alt="" width="140" height="140">
+                    <h5 class="mt-4 mb-3">{% trans "Внедряем новые технологии" %}</h5>
+                    
+                </div>
+                <div class="col-md-4 col-sm-6 ">
+                    <img class="rounded-circle" src="{% static 'bezopas.png' %}" alt="" width="140" height="140">
+                    <h5 class="mt-4 mb-3">{% trans "Соблюдаем все правила безопасности" %}</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <img class="rounded-circle" src="{% static 'layk.png' %}" alt="" width="140" height="140">
+                    <h5 class="mt-4 mb-3">{% trans "Работаем качественно и профессионально" %}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>		
+<section id="counter" class="overlay bg-fixed">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+
+                <div class="counter-item">
+                    <p style="text-align: left; margin: 15px;">
+                        {% trans "ЛИЦЕНЗИЯ: № 1-22-25-5569 — 26.08.2016г. Министерство строительства и сооружений <br> — 41.20 Строительство жилых и нежилых зданий Строительство других гражданских объектов <br> — 42.91 Строительство водопроводных сооружений — 43.22 Монтаж систем водоснабжения отопления, вентиляции, кондиционирования воздуха системы кондиционирования <br> — 43.29 Строительные работы — изоляционные работы (тепловые, звуковые и вибрационные) <br> — 43.1 Девелопмент и снос зданий <br> — 43.12 Снос зданий и подготовка строительной площадки (мест) <br> — 43.29.90 Строительные работы — монтажные работы <br> — 43.30 Отделочные работы <br> — 43.31 Работы по завершению строительных и отделочных работ — (штукатурные работы) <br> — 43.32 Работы по завершению строительных и отделочных работ — (столярные работы) <br> — 43,33 облицовка стен <br> — 43.34 Молярные и стекольные работы <br> — 43,91 Roong работает <br> — 43.99 Монтаж металлических строительных и малярных конструкций" %}
+                    </p>   
+                </div>
+              
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="features" class="bg-grey">
+    <section id="slide">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto1.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto2.jpg' %}" alt="Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto3.jpg' %}" alt="Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto4.jpg' %}" alt="Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto5.jpg' %}" alt="Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto6.jpg' %}" alt="Photo 6">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto7.jpg' %}" alt="Photo 7">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'slide/foto8.jpg' %}" alt="Photo 8">
+            </div>
+        </div>
+    </section>
+    
+</section>
+	
+<section id="section-featurettes" class="featurettes bg-white"></section>
+
+
+<section id="blog" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="triangle-up-left"></div>
+            <div class="triangle-up-right"></div>
+            <div class="square-left"></div>
+            <div class="square-right"></div>
+            <div class="title-wrap mb-5">
+                <h2 class="section-title" style="color: #2487C7;">{% trans "ЛИЦЕНЗИИ" %}</h2>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 blog-holder">
+                    <div class="row">
+                        <section id="photo-slider">
+                            <div class="slider-wrapper">
+                                <button class="slider-nav prev" aria-label="Previous Slide">&#10094;</button>
+                                <div class="slider-container">
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/lisence.jpg' %}" alt="Photo 1">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/lisence2.jpg' %}" alt="Photo 2">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/lisence3.jpg' %}" alt="Photo 3">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/lisence4.jpg' %}" alt="Photo 4">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/lisence5.jpg' %}" alt="Photo 5">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate.jpg' %}" alt="Photo 6">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate2.jpg' %}" alt="Photo 7">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate3.jpg' %}" alt="Photo 8">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate4.jpg' %}" alt="Photo 9">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate5.jpg' %}" alt="Photo 10">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate6.jpg' %}" alt="Photo 11">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="{% static 'lic/sertificate7.jpg' %}" alt="Photo 12">
+                                    </div>
+                                </div>
+                                <button class="slider-nav next" aria-label="Next Slide">&#10095;</button>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div id="photo-modal" class="photo-modal">
+    <button class="modal-nav prev">&#10094;</button>
+    <img class="modal-image" id="modal-image">
+    <button class="modal-nav next">&#10095;</button>
+    <span class="modal-close">&times;</span>
+</div>
+
+
+<section id="pricing">
+    <div class="container">
+        <div class="section-content">
+
+            <div class="title-wrap">
+                <h1 class="section-title">
+                    {% trans "Логистика" %}
+                </h1>
+            </div>
+
+            <section class="logistics-info-section">
+                <div class="logistics-container">
+                    <div class="logistics-text">
+                        <p>{% trans "Kuwwatly-Peykam – ведущая компания в Туркменистане не только в сфере строительства но так же специализирующаяся на международных перевозках грузов. Мы предоставляем широкий спектр услуг по транспортировке и логистике, обеспечивая надежное и своевременное доставление товаров между странами." %}</p>
+                        <h2>{% trans "Наши услуги:" %}</h2>
+                        <ul>
+                            <li>{% trans "Международные грузоперевозки: Мы осуществляем перевозку грузов по всему миру, обеспечивая их безопасное и эффективное перемещение от отправителя до получателя. Наши маршруты охватывают ключевые торговые точки и страны, обеспечивая бесперебойное сообщение между ними." %}</li>
+                            <li>{% trans "Транспортировка и логистика: Мы предлагаем комплексные логистические решения, включая планирование маршрутов, координацию грузоперевозок и управление цепочками поставок. Наша команда профессионалов работает над оптимизацией логистических процессов для повышения эффективности и снижения затрат." %}</li>
+                            <li>{% trans "Таможенное оформление: Мы берем на себя все аспекты таможенного оформления, обеспечивая соответствие международным стандартам и минимизацию задержек при пересечении границы." %}</li>
+                        </ul>
+                        <h2>{% trans "Почему выбирают нас:" %}</h2>
+                        <ul>
+                            <li>{% trans "Надежность: Мы гарантируем высокое качество предоставляемых услуг и строгую соблюдаемость сроков доставки." %}</li>
+                            <li>{% trans "Профессионализм: Наша команда состоит из опытных специалистов, которые знают все тонкости международной логистики и таможенного оформления." %}</li>
+                            <li>{% trans "Индивидуальный подход: Мы учитываем уникальные потребности каждого клиента и предоставляем персонализированные решения для оптимизации логистических процессов." %}</li>
+                        </ul>
+                        <p>{% trans "Kuwwatly-Peykam – ваш надежный партнер в области логистики и грузоперевозок. Мы стремимся к тому, чтобы наши клиенты получали исключительный сервис и максимально выгодные условия для их бизнеса." %}</p>
+                        
+                    </div>
+                    <div class="logistics-images">
+                        <img src="{% static 'log1.jpeg' %}" alt="Photo 1">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>	
+<footer class="mastfoot bg-white  border-top">
+
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <p class="mb-0">
+                        <a href="tel:+99312432060"><img src="{% static 'tel.png' %}" width="20px" alt=""> +99312432060</a>
+                        
+                        <a href="tel:+99312433727">FAX +99312433727</a> 
+                        <a href="mailto:admin@kuwwatly-peykam.com" class="email"><img src="{% static 'pocta.png' %}" alt="" width="20px"> admin@kuwwatly-peykam.com</a>
+                    </p>
+                </div>
+            </div>
+           
+            
+
+
+</footer>	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="{% static 'popper.min.js' %}"></script>
+	<script src="{% static 'bootstrap.min.js' %}"></script>
+	<script src="{% static 'select2.min.js' %} "></script>
+	<script src="{% static 'owl.carousel.min.js' %}"></script>
+	<script src="{% static 'isotope.min.js' %}"></script>
+	<script src="{% static "lightcase.js" %} %}"></script>
+	<script src="{% static 'waypoint.min.js' %}"></script>
+	<script src="{% static 'jquery.countTo.js' %}"></script>
+	<script src="{% static 'jquery.validate.min.js' %}"></script>
+
+	<!-- Main JS -->
+	<script src="{% static 'jquery.validate.min.js' %}"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65003908-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-65003908-1');
+</script>
+</body>
+</html>

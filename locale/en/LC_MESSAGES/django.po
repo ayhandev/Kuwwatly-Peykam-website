@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Кувватлы Пейкам | Компания Кувватлы Пейкам"
+msgstr "Kuwatly Peykam | Kuwatly Peykam Company"
+
+msgid "Главная"
+msgstr "Home"
+
+msgid "О нас"
+msgstr "About Us"
+
+msgid "Портфолио"
+msgstr "Portfolio"
+
+msgid "Галерея"
+msgstr "Gallery"
+
+msgid "Контакты"
+msgstr "Contacts"
+
+msgid "Стройте свои "
+msgstr "Build your own "
+
+msgid "мечты"
+msgstr "dreams"
+
+msgid "  вместе с нами!"
+msgstr "  together with us!"
+
+msgid "Чем мы "
+msgstr "What we are "
+
+msgid "лучше?"
+msgstr "better?"
+
+msgid "Строго соблюдаем все сроки выполнения работ"
+msgstr "We strictly adhere to all work deadlines"
+
+msgid "Внедряем новые технологии"
+msgstr "We introduce new technologies"
+
+msgid "Соблюдаем все правила безопасности"
+msgstr "We comply with all safety rules"
+
+msgid "Работаем качественно и профессионально"
+msgstr "We work efficiently and professionally"
+
+msgid "ЛИЦЕНЗИЯ: № 1-22-25-5569 — 26.08.2016г. Министерство строительства и сооружений <br> — 41.20 Строительство жилых и нежилых зданий Строительство других гражданских объектов <br> — 42.91 Строительство водопроводных сооружений — 43.22 Монтаж систем водоснабжения отопления, вентиляции, кондиционирования воздуха системы кондиционирования <br> — 43.29 Строительные работы — изоляционные работы (тепловые, звуковые и вибрационные) <br> — 43.1 Девелопмент и снос зданий <br> — 43.12 Снос зданий и подготовка строительной площадки (мест) <br> — 43.29.90 Строительные работы — монтажные работы <br> — 43.30 Отделочные работы <br> — 43.31 Работы по завершению строительных и отделочных работ — (штукатурные работы) <br> — 43.32 Работы по завершению строительных и отделочных работ — (столярные работы) <br> — 43,33 облицовка стен <br> — 43.34 Молярные и стекольные работы <br> — 43,91 Roong работает <br> — 43.99 Монтаж металлических строительных и малярных конструкций"
+msgstr "LICENSE: No. 1-22-25-5569 — 26.08.2016 Ministry of Construction and Structures <br> — 41.20 Construction of residential and non-residential buildings Construction of other civil engineering works <br> — 42.91 Construction of water supply facilities — 43.22 Installation of water supply, heating, ventilation, air conditioning systems <br> — 43.29 Construction work — insulation work (thermal, acoustic and vibration) <br> — 43.1 Development and demolition of buildings <br> — 43.12 Demolition of buildings and preparation of construction sites <br> — 43.29.90 Construction work — installation work <br> — 43.30 Finishing work <br> — 43.31 Work to complete construction and finishing work — (plastering work) <br> — 43.32 Work to complete construction and finishing work — (joinery work) <br> — 43.33 Wall cladding <br> — 43.34 Painting and glazing work <br> — 43.91 Roofing work <br> — 43.99 Installation of metal construction and painting structures"
+
+msgid "ЛИЦЕНЗИИ"
+msgstr "LICENSES"
+
+msgid "Логистика"
+msgstr "Logistics"
+
+msgid "Kuwwatly-Peykam – ведущая компания в Туркменистане не только в сфере строительства но так же специализирующаяся на международных перевозках грузов. Мы предоставляем широкий спектр услуг по транспортировке и логистике, обеспечивая надежное и своевременное доставление товаров между странами."
+msgstr "Kuwwatly-Peykam is a leading company in Turkmenistan not only in the construction sector but also specializing in international freight forwarding. We provide a wide range of transportation and logistics services, ensuring reliable and timely delivery of goods between countries."
+
+msgid "Наши услуги:"
+msgstr "Our Services:"
+
+msgid "Международные грузоперевозки: Мы осуществляем перевозку грузов по всему миру, обеспечивая их безопасное и эффективное перемещение от отправителя до получателя. Наши маршруты охватывают ключевые торговые точки и страны, обеспечивая бесперебойное сообщение между ними."
+msgstr "International Freight Forwarding: We handle freight transportation worldwide, ensuring safe and efficient movement from sender to recipient. Our routes cover key trade points and countries, providing uninterrupted communication between them."
+
+msgid "Транспортировка и логистика: Мы предлагаем комплексные логистические решения, включая планирование маршрутов, координацию грузоперевозок и управление цепочками поставок. Наша команда профессионалов работает над оптимизацией логистических процессов для повышения эффективности и снижения затрат."
+msgstr "Transportation and Logistics: We offer comprehensive logistics solutions, including route planning, freight coordination, and supply chain management. Our team of professionals works on optimizing logistics processes to enhance efficiency and reduce costs."
+
+msgid "Таможенное оформление: Мы берем на себя все аспекты таможенного оформления, обеспечивая соответствие международным стандартам и минимизацию задержек при пересечении границы."
+msgstr "Customs Clearance: We handle all aspects of customs clearance, ensuring compliance with international standards and minimizing delays at border crossings."
+
+msgid "Почему выбирают нас:"
+msgstr "Why Choose Us:"
+
+msgid "Надежность: Мы гарантируем высокое качество предоставляемых услуг и строгую соблюдаемость сроков доставки."
+msgstr "Reliability: We guarantee high-quality services and strict adherence to delivery deadlines."
+
+msgid "Профессионализм: Наша команда состоит из опытных специалистов, которые знают все тонкости международной логистики и таможенного оформления."
+msgstr "Professionalism: Our team consists of experienced professionals who know all the nuances of international logistics and customs clearance."
+
+msgid "Индивидуальный подход: Мы учитываем уникальные потребности каждого клиента и предоставляем персонализированные решения для оптимизации логистических процессов."
+msgstr "Individual Approach: We consider each client’s unique needs and provide personalized solutions to optimize logistics processes."
+
+msgid "Kuwwatly-Peykam – ваш надежный партнер в области логистики и грузоперевозок. Мы стремимся к тому, чтобы наши клиенты получали исключительный сервис и максимально выгодные условия для их бизнеса."
+msgstr "Kuwwatly-Peykam is your reliable partner in logistics and freight forwarding. We strive to provide our clients with exceptional service and the most favorable conditions for their business."
+
+msgid "Кувватлы Пейкам, в настоящее время, намерена достичь высоких рубежей путем широкого применения достигнутого опыта и внести весомый вклад в проводимые Уважаемым Президентом Сердар Бердымухамедовым, в нашей стране, технологические инновационные реформы и решения."
+msgstr "Kuwwatly-Peykam is currently aiming to achieve high standards by widely applying the gained experience and making a significant contribution to the technological innovative reforms and solutions conducted by the Honorable President Serdar Berdymukhamedov in our country."
+
+msgid "Наша компания разрабатывает новые проекты, такие как, открытие сборочной линии для инновационного умного топливного диспенсера, обеспечивающего такие показатели как безопасность, экономия и экология, так же, проект по открытию сборочной линии для мPOS терминалов нового поколения для оплаты картами, контактными, бесконтактными, QR кодом."
+msgstr "Our company is developing new projects such as opening an assembly line for an innovative smart fuel dispenser providing safety, economy, and ecology, and also a project for opening an assembly line for next-generation mPOS terminals for card payments, including contact, contactless, and QR code."
+
+msgid "Так же проект по очистке нефтетопливных резервуаров и последующей переработке донных отложений, без внедрения человеческих рабочих сил с помощью механизированных автоматических систем."
+msgstr "We are also working on a project for cleaning oil fuel tanks and processing bottom sediments using mechanized automatic systems without human labor."
+
+msgid "В настоящее время ХО «Кувватлы Пейкам», осваивает мировые ведущие технологии и осуществил набор высококвалифицированных инженеров и специалистов в свой кадровый состав. Наши специалисты имеют ответственный подход к проводимым работам, используя не малый опыт в различных направлениях технологической, строительной сферах."
+msgstr "Currently, Kuwwatly-Peykam is mastering leading global technologies and has recruited highly qualified engineers and specialists into its team. Our specialists have a responsible approach to their work, using significant experience in various technological and construction fields."
+
+msgid "Хозяйственное общество «Кувватлы Пейкам», имеет опыт в строительной сфере в качестве субподрядчика на проектах, осуществляемых на территории Туркменистана с известными компаниями как “ GAP INŞAAT SANAYI WE TIJARET A.Ş.” Company , “HYUNDAI ENGINEERING CO. LTD.” Company, “RÖNESANS ENDÜSTRI TESISLERI INŞAAT SANAYI VE TICARET ANONIM ŞIRKETI” Company а также “Bouygues International Batiment” Company, от которых имеем рекомендательные и благодарственные письма."
+msgstr "The economic society Kuwwatly-Peykam has experience in the construction field as a subcontractor on projects carried out in Turkmenistan with well-known companies such as 'GAP INŞAAT SANAYI WE TIJARET A.Ş.', 'HYUNDAI ENGINEERING CO. LTD.', 'RÖNESANS ENDÜSTRI TESISLERI INŞAAT SANAYI VE TICARET ANONIM ŞIRKETI', and 'Bouygues International Batiment', from which we have received recommendation and appreciation letters."
+
+msgid "В данное время ХО «Кувватлы Пейкам» достраивает двух пролётный 18-ти метровый мост к проезду строящейся инфекционной больницы рассчитанной на 200 мест, которая находится в Ахалском велаяте поселок Изгант, а так же начато строительство 2-х мостов по ул.Г.Кулиева дороги «Ашгабат-Геоктепе»."
+msgstr "Currently, Kuwwatly-Peykam is completing the construction of an 18-meter two-span bridge leading to the under-construction infectious disease hospital designed for 200 beds, located in the Akhal velayat, Isgant settlement, and has also started the construction of two bridges on G. Kuliyev Street of the 'Ashgabat-Geomtep' road."
+
+msgid "Мы так же принимали участие и закончили различные виды работ при постройке нового отеля «Диван» в центре Ашгабата и участие в строительстве нового бизнес центра и отеля «Гарагум», в Ашгабате, выполняя высотные работы, используя промышленных альпинистов и монтажников."
+msgstr "We also participated and completed various types of work in the construction of the new 'Divan' hotel in the center of Ashgabat and the construction of the new 'Garagum' business center and hotel in Ashgabat, performing high-altitude work using industrial climbers and assemblers."
+
+msgid "ВИДЫ РАБОТ"
+msgstr "TYPES OF WORK"
+
+msgid "Строительство автомагистралей и шоссе. Автострады, автодороги, пешеходные переходы, обновление дорожного полотна, обновление дорожного покрытия мостов и тоннелей, строительство и обслуживание взлётно-посадочных полос, разметка настила дорожными указателями Строительство жилых и нежилых зданий Строительство водных сооружений Монтаж (установка) водопроводных систем, систем отопления, вентиляции, кондиционирование воздуха"
+msgstr "Construction of highways and highways. Motorways, highways, pedestrian crossings, road surface renewal, bridge and tunnel road surface renewal, construction and maintenance of runways, pavement marking with road signs Construction of residential and non-residential buildings Construction of water structures Installation (installation) of water pipes systems, heating, ventilation, air conditioning systems"
+
+msgid "Снос зданий и подготовка строительного участка Строительные работы — изоляционные работы (тепловые, звуковые и вибрационные) Установка металлоконструкций и покраска структур Огнеупорная изоляция метало-конструкций"
+msgstr "Demolition of buildings and preparation of the construction site Construction work - insulation work (thermal, sound and vibration) Installation of metal structures and painting of structures Fireproof insulation of metal structures"
+
+msgid "Машины для напыления бетона (торкрет-установки) Работа по завершению строительных работ и отделочные работы — (штукатурные работы) Работа по завершению строительных работ и отделочные работы — (столярные и плотницкие работы) Работа по завершению строительных работ и отделочные работы,(покрытие полов)"
+msgstr "Concrete spraying machines (shotcrete installations) Finishing and finishing work - (plastering) Finishing and finishing work - (joinery and carpentry) Finishing and finishing work (flooring)"
+
+msgid "Работа по завершению строительных работ и отделочные работ,(малярные и стекольные работы) Прочие специальные строительные работы. Кровельные работы Защитные барьеры от движущихся свободных (свободных) песков Протяжка электрического кабеля Кабельный протягивающий инструмент Протяжка оптоволоконного кабеля"
+msgstr "Work to complete construction works and finishing works (painting and glass work) Other special construction work. Roofing work Protective barriers against moving loose sands Electrical cable pulling Cable pulling tools Fiber optic cable pulling"
+
+msgid "ВОЛОКОННО-ОПТИЧЕСКАЯ ДЕЯТЕЛЬНОСТЬ ФО Проверка и тестирования OF Pulling и планирование Для пайки"
+msgstr "FIBER OPTIC ACTIVITIES FO Inspection and Testing OF Pulling and Planning For Soldering"
+
+msgid "Строительство опреснительных сооружений Установка свай Установка систем видео наблюдения Ирригационные работы"
+msgstr "Construction of desalination plants Installation of piles Installation of video surveillance systems Irrigation works"
+
+msgid "Прочие специальные строительные работы Установка отопления Установка вентиляции Очистка нефтяных резервуаров и сосудов Переработка нефтешлама"
+msgstr "Other special construction work Heating installation Ventilation installation Cleaning of oil tanks and vessels Oil sludge processing"
+
+msgid "Языки"
+msgstr "Languages"
+
+msgid "Русский"
+msgstr "Russian"
+
+msgid "Английский"
+msgstr "English"
+
+msgid "Наши адреса"
+msgstr "Our addresses"
+
+msgid "Туркменистан, Г.Ашхабад, Парахат 2/4, б.3"
+msgstr "Turkmenistan, Ashgabat, Parahat 2/4, b.3"
+
+msgid "Электронная почта:"
+msgstr "Email:"
+
+msgid "Телефон номер:"
+msgstr "Phone number:"
+
+msgid "Факс :"
+msgstr "Fax :"
+
+msgid "Связатся с нами"
+msgstr "Contact us"
+
+msgid "Отправить"
+msgstr "Send"
+
+msgid "Ваше Имя"
+msgstr "Your name"
+
+msgid "Ваше Сообщение"
+msgstr "Your message"
+
+msgid "Ваш Телефон номер"
+msgstr "Your phone number"
+
+msgid "Ваша Электронная почта"
+msgstr "Your Email"
+
+msgid "Фотографий нет"
+msgstr "No photos"
+
+msgid "Галерей нет"
+msgstr "No galleries"
+
+msgid "Наша техника"
+msgstr "Our equipment"
+
+msgid "Строительство 2-х пролетного моста пос. Изгант"
+msgstr "Construction of a two-span bridge in the village of Izgant"
+
+msgid "Строительство Отель DIWAN"
+msgstr "Construction Hotel DIWAN"
+
+msgid "Строительство Бизнес центр и VIP Отель «Каракум»"
+msgstr "Construction of Business Center and VIP Hotel «Karakum»"
+
+msgid "Строительство Карбамидного завода, п. Бекдаш"
+msgstr "Construction of the Urea Plant, Bekdash village"
+
+msgid "Другие различные проекты с нашим участием в проектировании, строительстве, дизайне, разработке. (Здания)"
+msgstr "Other various projects with our participation in design, construction, design, development. (Building)"
+
+msgid "Инфраструктура (Водовод, Насосная Станция)"
+msgstr "Infrastructure (Plumbing, Pumping Station)"
+
+msgid "Инфраструктура (Автомобильные Мосты, Строительство 2-х мостов по трассе Ашгабат — Гёктепе, проект высокоскоростной железной дороги)"
+msgstr "Infrastructure (Road Bridges, Construction of 2 bridges on the Ashgabat - Göktepe highway, high-speed railway project)"
+
+msgid "Промышленные (сборочные конвейер для модульной бензозаправочной колонки с уловителем пара. Сборочный конвейер для современного сенсорного платежного терминала)"
+msgstr "Industrial (assembly line for a modular gas station with a steam trap. Assembly line for a modern touch-screen payment terminal)"
+
+msgid "Промышленность (Очистка нефте-топливных резервуаров от донных отложений и дальнейшая переработка без внедрения человекосил, механизированным способом)"
+msgstr "Industry (Cleaning oil and fuel tanks from bottom sediments and further processing without the use of manpower, using a mechanized method)"
+
+msgid "Транспортировка электро автобусов YUTONG из Китая в Туркменистан"
+msgstr "Transportation of YUTONG electric buses from China to Turkmenistan"
+
+
+
+
+

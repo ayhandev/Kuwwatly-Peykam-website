@@ -1,0 +1,58 @@
+.logistics-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.logistics-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.logistics-text h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logistics-text h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logistics-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.logistics-text ul li {
+    margin-bottom: 10px;
+}
+
+.logistics-images {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logistics-images img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
