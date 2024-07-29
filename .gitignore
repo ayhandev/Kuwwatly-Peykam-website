@@ -5,7 +5,6 @@ settings_dev.py
 local-cdn/
 .venv
 *.pyc
-media
 config/settings_dev.py
 config/settings_prod.py
 .vscode/settings.json
