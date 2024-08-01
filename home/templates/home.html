@@ -394,16 +394,16 @@
                 <img class="photos photos-7" src="{% static 'lic/sertificate7.jpg' %}" alt="">
             </div>
 
-            <div class="custom-lightbox">
-                <span class="custom-close">&times;</span>
-                <img class="custom-lightbox-img" src="" alt="Фото">
-                <div class="custom-navigation">
-                    <span class="custom-prev">&#10094;</span>
-                    <span class="custom-next">&#10095;</span>
+            <div class="customs-lightbox">
+                <span class="customs-close">&times;</span>
+                <img class="customs-lightbox-img" src="" alt="Фото">
+                <div class="customs-navigation">
+                    <span class="customs-prev">&#10094;</span>
+                    <span class="customs-next">&#10095;</span>
                 </div>
             </div>
             <style>
-                .custom-lightbox {
+                .customs-lightbox {
                     display: none;
                     position: fixed;
                     top: 0;
@@ -416,22 +416,22 @@
                     overflow: hidden;
                 }
                 
-                .custom-lightbox-img {
+                .customs-lightbox-img {
                     max-width: 80%;
                     max-height: 80%;
                     transition: transform 0.3s ease;
                 }
                 
-                .custom-close {
+                .customs-close {
                     position: absolute;
-                    top: 20px;
+                    top: 100px;
                     right: 20px;
                     font-size: 2rem;
                     color: white;
                     cursor: pointer;
                 }
                 
-                .custom-navigation {
+                .customs-navigation {
                     position: absolute;
                     top: 50%;
                     width: 100%;
@@ -440,14 +440,20 @@
                     transform: translateY(-50%);
                 }
                 
-                .custom-prev, .custom-next {
-                    margin: 0 30px;
+                .customs-prev  {
+                    margin: 0 20px;
                     width: 40px;
                     font-size: 2rem;
                     color: white;
                     cursor: pointer;
                 }
-                
+                .customs-next {
+                    margin: 0 -10px;
+                    width: 40px;
+                    font-size: 2rem;
+                    color: white;
+                    cursor: pointer;
+                }
                 .gallerys {
                     margin: 0 auto;
                     padding-top: 60px;
@@ -509,11 +515,11 @@
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     const galleryItems = document.querySelectorAll('.photos');
-                    const lightbox = document.querySelector('.custom-lightbox');
-                    const lightboxImg = document.querySelector('.custom-lightbox-img');
-                    const closeBtn = document.querySelector('.custom-close');
-                    const prevBtn = document.querySelector('.custom-prev');
-                    const nextBtn = document.querySelector('.custom-next');
+                    const lightbox = document.querySelector('.customs-lightbox');
+                    const lightboxImg = document.querySelector('.customs-lightbox-img');
+                    const closeBtn = document.querySelector('.customs-close');
+                    const prevBtn = document.querySelector('.customs-prev');
+                    const nextBtn = document.querySelector('.customs-next');
                 
                     let currentIndex = 0;
                 
