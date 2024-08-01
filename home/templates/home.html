@@ -11,7 +11,7 @@
     <meta name="description" content="Ayhandev :)">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'select2.min.css' %}">
     <link rel="stylesheet" href="{% static 'select2.min.css' %}">
@@ -128,24 +128,29 @@
         <div class="section-content">
             <div class="title-wrap">
                 <h2 class="section-title">{% trans "Чем мы " %}<b><span style="color: #2487C7;">{% trans "лучше?" %}</span></b></h2>
-                <p class="section-sub-title" style="text-decoration: underline;"><b>{% trans "Строго соблюдаем все сроки выполнения работ" %}</b></p>
+                {% comment %} <p class="section-sub-title" style="text-decoration: underline;"><b>{% trans "Строго соблюдаем все сроки выполнения работ" %}</b></p> {% endcomment %}
 
             </div>
             
             <div class="row text-center">
-                <div class="col-md-4 col-sm-6 ">
-                    <img class="rounded-circle" src="{% static 'tehlonog.png' %}" alt="" width="140" height="140">
+                <div class="col-md-3 col-sm-4 ">
+                    <img class="rounded-circle" src="{% static 'tehlonog.gif' %}" alt="" width="140" height="140">
                     <h5 class="mt-4 mb-3">{% trans "Внедряем новые технологии" %}</h5>
                     
                 </div>
-                <div class="col-md-4 col-sm-6 ">
-                    <img class="rounded-circle" src="{% static 'bezopas.png' %}" alt="" width="140" height="140">
+                <div class="col-md-3 col-sm-4 ">
+                    <img class="rounded-circle" src="{% static 'bezopas.gif' %}" alt="" width="140" height="140" >
                     <h5 class="mt-4 mb-3">{% trans "Соблюдаем все правила безопасности" %}</h5>
                 </div>
 
-                <div class="col-md-4 col-sm-6 ">
-                    <img class="rounded-circle" src="{% static 'layk.png' %}" alt="" width="140" height="140">
+                <div class="col-md-3 col-sm-4 ">
+                    <img class="rounded-circle" src="{% static 'layk.gif' %}" alt="" width="140" height="140">
                     <h5 class="mt-4 mb-3">{% trans "Работаем качественно и профессионально" %}</h5>
+                </div>
+
+                <div class="col-md-3 col-sm-4 ">
+                    <img class="rounded-circle" src="{% static 'wremya.gif' %}" alt="" width="140" height="140">
+                    <h5 class="mt-4 mb-3">{% trans "Строго соблюдаем все сроки выполнения работ" %}</h5>
                 </div>
             </div>
         </div>
@@ -217,60 +222,340 @@
 
                 <div class="col-md-12 blog-holder">
                     <div class="row">
-                        <section id="photo-slider">
-                            <div class="slider-wrapper">
-                                <button class="slider-nav prev" aria-label="Previous Slide">&#10094;</button>
-                                <div class="slider-container">
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/lisence.jpg' %}" alt="Photo 1">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/lisence2.jpg' %}" alt="Photo 2">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/lisence3.jpg' %}" alt="Photo 3">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/lisence4.jpg' %}" alt="Photo 4">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/lisence5.jpg' %}" alt="Photo 5">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/lisence1.jpg' %}" alt="Photo 1">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate.jpg' %}" alt="Photo 6">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate2.jpg' %}" alt="Photo 7">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate3.jpg' %}" alt="Photo 8">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate4.jpg' %}" alt="Photo 9">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate5.jpg' %}" alt="Photo 10">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate6.jpg' %}" alt="Photo 11">
-                                    </div>
-                                    <div class="slider-item">
-                                        <img src="{% static 'lic/sertificate7.jpg' %}" alt="Photo 12">
-                                    </div>
-                                </div>
-                                <button class="slider-nav next" aria-label="Next Slide">&#10095;</button>
-                            </div>
-                        </section>
+                       
 
+                        <div class="custom-gallery">
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence.jpg' %}" alt="Photo 1"></div>
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence2.jpg' %}" alt="Photo 2"></div>
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence3.jpg' %}" alt="Photo 3"></div>
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence12.jpg' %}" alt="Photo 3"></div>
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence4.jpg' %}" alt="Photo 4"></div>
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence5.jpg' %}" alt="Photo 5"></div>
+                            <div class="custom-gallery-item"><img src="{% static 'lic/lisence.jpg' %}" alt="Photo 1"></div>
+                        </div>
+                    
+                        <div class="custom-lightbox">
+                            <span class="custom-close" >&times;</span>
+                            <img class="custom-lightbox-img" src="" alt="">
+                            <div class="custom-navigation">
+                                <span class="custom-prev">&#10094;</span>
+                                <span class="custom-next">&#10095;</span>
+                            </div>
+                        </div>
+                        <style>
+                            body {
+                                overflow: hidden;
+                            }
+                            
+                            .custom-gallery {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 10px;
+                                justify-content: center;
+                                margin: 0 auto;
+                            }
+                            
+                            .custom-gallery-item {
+                                position: relative;
+                                transition: transform 0.3s ease;
+                            }
+                            
+                            .custom-gallery-item:nth-child(odd) {
+                                margin-top: 20px; /* Убираем смещение для начальных значений */
+                            }
+                            
+                            .custom-gallery-item img {
+                                max-width: 300px; /* Фиксируем размеры фотографий */
+                                max-height: 200px;
+                                object-fit: cover; /* Обеспечиваем, чтобы фото не растягивалось */
+                                cursor: pointer;
+                            }
+                            
+                            .custom-gallery-item:hover {
+                                transform: scale(1.1);
+                            }
+                            
+                            .custom-lightbox {
+                                z-index: 3;
+                                display: none;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.8);
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .custom-lightbox-img {
+                                max-width: 80%;
+                                max-height: 80%;
+                                transition: transform 0.3s ease;
+                            }
+                            
+                            .custom-close {
+                                position: absolute;
+                                top: 20px;
+                                right: 20px;
+                                font-size: 2rem;
+                                color: white;
+                                cursor: pointer;
+                            }
+                            
+                            .custom-navigation {
+                                position: absolute;
+                                top: 50%;
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                transform: translateY(-50%);
+                            }
+                            
+                            .custom-prev, .custom-next {
+                                margin: 0 30px;
+                                width: 40px;
+                                font-size: 2rem;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const galleryItems = document.querySelectorAll(".custom-gallery-item img");
+        const lightbox = document.querySelector(".custom-lightbox");
+        const lightboxImg = document.querySelector(".custom-lightbox-img");
+        const closeBtn = document.querySelector(".custom-close");
+        const prevBtn = document.querySelector(".custom-prev");
+        const nextBtn = document.querySelector(".custom-next");
+        let currentIndex;
+        const totalImages = galleryItems.length;
+    
+        function openLightbox(index) {
+            currentIndex = index;
+            lightboxImg.src = galleryItems[index].src;
+            lightbox.style.display = "flex";
+        }
+    
+        function closeLightbox() {
+            lightbox.style.display = "none";
+        }
+    
+        function showPrevImage() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        }
+    
+        function showNextImage() {
+            currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        }
+    
+        galleryItems.forEach((img, index) => {
+            img.addEventListener("click", () => openLightbox(index));
+        });
+    
+        closeBtn.addEventListener("click", closeLightbox);
+        prevBtn.addEventListener("click", showPrevImage);
+        nextBtn.addEventListener("click", showNextImage);
+    
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    });
+    
+
+</script>
                     </div>
                 </div>
 
             </div>
+            <div class="mt-5 mb-5 pt-3">
+                <h2 class="mt-5" style="color: #2487C7; text-align: center;">{% trans "СЕРТИФИКАТЫ БЕЗОПАСНОСТИ" %}</h2>
+            </div>
+            <p>{% trans "Сертификат № TM 795 .711 .0 0335-19 .01 .2019" %}</p>
+<p>{% trans "Сертификат № TM 795 .711 .0 0336 -19 .01 .2019" %}</p>
+<p>{% trans "Сертификат N° TM 795 .711 .0 0820 -14 .02 .2019" %}</p>
+<p>{% trans "Сертификат № TM 795 .711 .0 4 0 06 - 30 .07 .2019" %}</p>
+<p>{% trans "Сертификат № TM 795 .711 .0 4292 - 21 .08 .2019" %}</p>
+<p>{% trans "Сертификат TDS - № 015934 -12 .072017" %}</p>
+<p>{% trans "Сертификат № TM 795 .9 .11 .583 - 08 .06 .2017" %}</p>
+
+
+            <div class="gallerys" style="text-align: center;">
+                <img class="photos photos-2" src="{% static 'lic/sertificate.jpg' %}" alt="">
+                <img class="photos photos-1" src="{% static 'lic/sertificate2.jpg' %}" alt="">
+                <img class="photos photos-3" src="{% static 'lic/sertificate3.jpg' %}" alt="">
+                <img class="photos photos-4" src="{% static 'lic/sertificate4.jpg' %}" alt="">
+                <img class="photos photos-5" src="{% static 'lic/sertificate5.jpg' %}" alt="">
+                <img class="photos photos-6" src="{% static 'lic/sertificate6.jpg' %}" alt="">
+                <img class="photos photos-7" src="{% static 'lic/sertificate7.jpg' %}" alt="">
+            </div>
+
+            <div class="custom-lightbox">
+                <span class="custom-close">&times;</span>
+                <img class="custom-lightbox-img" src="" alt="Фото">
+                <div class="custom-navigation">
+                    <span class="custom-prev">&#10094;</span>
+                    <span class="custom-next">&#10095;</span>
+                </div>
+            </div>
+            <style>
+                .custom-lightbox {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                }
+                
+                .custom-lightbox-img {
+                    max-width: 80%;
+                    max-height: 80%;
+                    transition: transform 0.3s ease;
+                }
+                
+                .custom-close {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 2rem;
+                    color: white;
+                    cursor: pointer;
+                }
+                
+                .custom-navigation {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    transform: translateY(-50%);
+                }
+                
+                .custom-prev, .custom-next {
+                    margin: 0 30px;
+                    width: 40px;
+                    font-size: 2rem;
+                    color: white;
+                    cursor: pointer;
+                }
+                
+                .gallerys {
+                    margin: 0 auto;
+                    padding-top: 60px;
+                    display: flex;
+                    flex-wrap: nowrap; /* Не переносить фотографии на новую строку */
+                    overflow-x: auto; /* Добавить горизонтальный скролл при необходимости */
+                    gap: 10px; /* Расстояние между фотографиями */
+                    align-items: flex-start; /* Выравнивание фотографий по верхнему краю */
+                }
+                
+                .photos {
+                    max-width: 300px;
+                    max-height: 200px;
+                    object-fit: cover; /* Обеспечиваем, чтобы фото не растягивалось */
+                    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+                    cursor: pointer;
+                    margin: 0 auto;
+                }
+                
+                {% comment %} .photos:hover {
+                    transform: scale(1.1); /* Увеличение при наведении */
+                } {% endcomment %}
+                
+                .photos-5 {
+                    margin-top: -30px; /* Смещение по вертикали */
+                }
+                
+                .photos-6 {
+                    margin-top: -40px; /* Смещение по вертикали */
+                }
+                
+                .photos-7 {
+                    margin-top: -50px; /* Смещение по вертикали */
+                }
+                
+                @media (max-width: 768px) {
+                    .gallerys {
+                        flex-wrap: wrap; /* Перенос фотографий на новую строку при меньшем экране */
+                        gap: 5px; /* Меньшее расстояние между фотографиями на маленьких экранах */
+                    }
+                    
+                    .photos {
+                        max-width: calc(50% - 5px); /* Две фотографии в строке с учетом расстояния между ними */
+                        height: auto; /* Автоматическая высота для сохранения пропорций */
+                    }
+                    
+                    .photos-5, .photos-6, .photos-7 {
+                        margin-top: 0; /* Нет смещения на маленьких экранах */
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .photos {
+                        max-width: 100%; /* Фотографии занимают всю ширину контейнера на очень маленьких экранах */
+                    }
+                }
+                
+            </style>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const galleryItems = document.querySelectorAll('.photos');
+                    const lightbox = document.querySelector('.custom-lightbox');
+                    const lightboxImg = document.querySelector('.custom-lightbox-img');
+                    const closeBtn = document.querySelector('.custom-close');
+                    const prevBtn = document.querySelector('.custom-prev');
+                    const nextBtn = document.querySelector('.custom-next');
+                
+                    let currentIndex = 0;
+                
+                    galleryItems.forEach((item, index) => {
+                        item.addEventListener('click', () => {
+                            lightbox.style.display = 'flex';
+                            lightboxImg.src = item.src;
+                            currentIndex = index;
+                        });
+                    });
+                
+                    closeBtn.addEventListener('click', () => {
+                        lightbox.style.display = 'none';
+                    });
+                
+                    function showImage(index) {
+                        const images = Array.from(galleryItems);
+                        if (index >= 0 && index < images.length) {
+                            lightboxImg.src = images[index].src;
+                            currentIndex = index;
+                        }
+                    }
+                
+                    prevBtn.addEventListener('click', () => {
+                        showImage(currentIndex - 1);
+                    });
+                
+                    nextBtn.addEventListener('click', () => {
+                        showImage(currentIndex + 1);
+                    });
+                
+                    lightbox.addEventListener('click', (e) => {
+                        if (e.target === lightbox) {
+                            lightbox.style.display = 'none';
+                        }
+                    });
+                });
+                
+            </script>
         </div>
     </div>
+    
 </section>
 <div id="photo-modal" class="photo-modal">
     <button class="modal-nav prev">&#10094;</button>

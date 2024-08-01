@@ -213,7 +213,28 @@ msgstr "Industry (Cleaning oil and fuel tanks from bottom sediments and further 
 msgid "Транспортировка электро автобусов YUTONG из Китая в Туркменистан"
 msgstr "Transportation of YUTONG electric buses from China to Turkmenistan"
 
+msgid "СЕРТИФИКАТЫ БЕЗОПАСНОСТИ"
+msgstr "SAFETY CERTIFICATES"
 
+msgid "Сертификат № TM 795 .711 .0 0335-19 .01 .2019"
+msgstr "Certificate № TM 795 .711 .0 0335-19 .01 .2019"
 
+msgid "Сертификат № TM 795 .711 .0 0336 -19 .01 .2019"
+msgstr "Certificate No. TM 795 .711 .0 0336 -19 .01 .2019"
+
+msgid "Сертификат N° TM 795 .711 .0 0820 -14 .02 .2019"
+msgstr "Certificate № TM 795 .711 .0 0820 -14 .02 .2019"
+
+msgid "Сертификат № TM 795 .711 .0 4 0 06 - 30 .07 .2019"
+msgstr "Certificate № TM 795 .711 .0 4 0 06 - 30 .07 .2019"
+
+msgid "Сертификат № TM 795 .711 .0 4292 - 21 .08 .2019"
+msgstr "Certificate № TM 795 .711 .0 4292 - 21 .08 .2019"
+
+msgid "Сертификат TDS - № 015934 -12 .072017"
+msgstr "Certificate TDS - № 015934 -12 .072017"
+
+msgid "Сертификат № TM 795 .9 .11 .583 - 08 .06 .2017"
+msgstr "Certificate № TM 795 .9 .11 .583 - 08 .06 .2017"
 
 
