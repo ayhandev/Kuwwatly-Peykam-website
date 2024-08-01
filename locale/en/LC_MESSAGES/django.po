@@ -237,4 +237,5 @@ msgstr "Certificate TDS - № 015934 -12 .072017"
 msgid "Сертификат № TM 795 .9 .11 .583 - 08 .06 .2017"
 msgstr "Certificate № TM 795 .9 .11 .583 - 08 .06 .2017"
 
-
+msgid "Узбекистан, Г.Ташкент, Мирзо Улугбекский район, ул. Сайрам, дом 1-А, кв.-2"
+msgstr "Uzbekistan, Tashkent, Mirzo Ulugbek district, st. Sairam, building 1-A, apt.-2"
